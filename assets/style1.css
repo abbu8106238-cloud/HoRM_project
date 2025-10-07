@@ -1,0 +1,280 @@
+/* ======================================================
+   Mu Sigma Dashboard Styling — Premium Visual Upgrade
+   ====================================================== */
+
+/* ---------- Brand Palette ---------- */
+:root {
+    --primary-color: #FF6B35;
+    --secondary-color: #004E89;
+    --success-color: #28A745;
+    --warning-color: #FFC107;
+    --danger-color: #DC3545;
+    --info-color: #17A2B8;
+    --light-color: #F8F9FA;
+    --dark-color: #212529;
+    --white: #FFFFFF;
+    --gray-100: #F8F9FA;
+    --gray-200: #E9ECEF;
+    --gray-300: #DEE2E6;
+    --gray-600: #6C757D;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --border-radius: 10px;
+    --transition: all 0.25s ease-in-out;
+    --glass-bg: rgba(255, 255, 255, 0.6);
+    --glass-blur: blur(8px);
+}
+
+/* ---------- Full-Width Layout ---------- */
+.main .block-container {
+    padding: 2rem 0;
+    max-width: 100%;
+}
+
+/* ---------- Header ---------- */
+.main-header {
+    background: linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    color: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2.5rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.main-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.main-subtitle {
+    font-size: 1.15rem;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+/* ---------- Logo ---------- */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 10;
+}
+
+.logo-container img {
+    width: 85px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+.logo-container img:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- Metric Cards ---------- */
+.metric-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--gray-200);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.metric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.metric-value {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.metric-label {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+    margin-top: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.metric-change {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+.metric-change.positive { color: var(--success-color); }
+.metric-change.negative { color: var(--danger-color); }
+
+/* ---------- Risk Indicators ---------- */
+.risk-indicator {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.risk-indicator:hover {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+}
+
+.risk-low {
+    background: linear-gradient(120deg, #32CD32, var(--success-color));
+    color: white;
+}
+.risk-medium {
+    background: linear-gradient(120deg, #FFD54F, var(--warning-color));
+    color: var(--dark-color);
+}
+.risk-high {
+    background: linear-gradient(120deg, #FF4B2B, var(--danger-color));
+    color: white;
+}
+
+/* ---------- Action Cards ---------- */
+.action-card {
+    background: var(--white);
+    padding: 1.75rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 1.25rem;
+    border-left: 5px solid var(--secondary-color);
+    transition: var(--transition);
+}
+.action-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.action-title {
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+.action-description {
+    color: var(--gray-600);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.action-impact {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+    color: var(--dark-color);
+    background: var(--gray-200);
+    font-weight: 500;
+}
+.action-impact.high { background: var(--danger-color); color: white; }
+.action-impact.medium { background: var(--warning-color); color: var(--dark-color); }
+.action-impact.low { background: var(--info-color); color: white; }
+
+/* ---------- Employee Info ---------- */
+.employee-info-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--gray-200);
+    padding: 1rem 1.25rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+    border-top: 4px solid var(--primary-color);
+}
+.info-label {
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+.info-value {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+/* ---------- Filter & Search Sections ---------- */
+.filter-section, .search-section {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+.filter-section:hover, .search-section:hover {
+    transform: translateY(-2px);
+}
+
+.filter-title, .search-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ---------- Stats Section ---------- */
+.stats-section {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+.stats-section:hover {
+    transform: translateY(-3px);
+}
+.stats-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ---------- Buttons ---------- */
+.stButton > button {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.stButton > button:hover {
+    transform: scale(1.03);
+    box-shadow: var(--shadow);
+}
+
+/* ---------- Alerts ---------- */
+.stAlert {
+    border-radius: var(--border-radius);
+    border: none;
+    box-shadow: var(--shadow);
+}
+.stSuccess { border-left: 5px solid var(--success-color); }
+.stWarning { border-left: 5px solid var(--warning-color); }
+.stError { border-left: 5px solid var(--danger-color); }
+.stInfo { border-left: 5px solid var(--info-color); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .main-title { font-size: 2rem; }
+    .metric-card { margin-bottom: 1rem; }
+    .logo-container { position: static; text-align: center; margin-bottom: 1rem; }
+    .filter-section, .search-section, .stats-section { padding: 1.25rem; }
+}

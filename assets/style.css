@@ -1,0 +1,336 @@
+/* Mu Sigma Brand Colors and Professional Styling */
+:root {
+    --primary-color: #FF6B35;
+    --secondary-color: #004E89;
+    --success-color: #28A745;
+    --warning-color: #FFC107;
+    --danger-color: #DC3545;
+    --info-color: #17A2B8;
+    --light-color: #F8F9FA;
+    --dark-color: #343A40;
+    --white: #FFFFFF;
+    --gray-100: #F8F9FA;
+    --gray-200: #E9ECEF;
+    --gray-300: #DEE2E6;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+/* Main App Styling */
+.main .block-container {
+    
+     padding-left: 1rem;
+     padding-right: 1rem;
+     max-width: 100%;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+     max-width: 1100px;
+}
+
+/* Header Styling */
+.main-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.main-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    opacity: 0.9;
+}
+
+/* Logo Styling */
+.logo-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.logo-container img {
+    width: 80px;
+    
+    height: auto;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+}
+
+/* Metric Cards */
+.metric-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.2s;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.metric-label {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    margin-top: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.metric-change {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.metric-change.positive {
+    color: var(--success-color);
+}
+
+.metric-change.negative {
+    color: var(--danger-color);
+}
+
+/* Risk Level Indicators */
+.risk-indicator {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+}
+
+.risk-indicator:hover {
+    transform: scale(1.05);
+    border-color: var(--dark-color);
+}
+
+.risk-low {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.risk-medium {
+    background-color: var(--warning-color);
+    color: var(--dark-color);
+}
+
+.risk-high {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+/* Action Cards */
+.action-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.action-title {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.action-description {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.action-impact {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--gray-200);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    color: var(--dark-color);
+}
+
+.action-impact.high {
+    background: var(--danger-color);
+    color: white;
+}
+
+.action-impact.medium {
+    background: var(--warning-color);
+    color: var(--dark-color);
+}
+
+.action-impact.low {
+    background: var(--info-color);
+    color: white;
+}
+
+/* Employee Info Cards */
+.employee-info-card {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+    border-top: 3px solid var(--primary-color);
+}
+
+.info-label {
+    font-size: 0.75rem;
+    color: var(--gray-600);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+}
+
+.info-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+/* Filter Section */
+.filter-section {
+    background: var(--gray-100);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.filter-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Search Section */
+.search-section {
+    background: linear-gradient(135deg, var(--light-color), var(--white));
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.search-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Statistics Section */
+.stats-section {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.stats-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main .block-container {
+        padding: 1rem;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .metric-card {
+        margin-bottom: 1rem;
+    }
+    
+    .logo-container {
+        position: static;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Streamlit Specific Overrides */
+.stMetric {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary-color);
+}
+
+.stSelectbox > div > div {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+}
+
+.stButton > button {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.stButton > button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+}
+
+/* Alert Styling */
+.stAlert {
+    border-radius: var(--border-radius);
+    border: none;
+    box-shadow: var(--shadow);
+}
+
+.stSuccess {
+    border-left: 4px solid var(--success-color);
+}
+
+.stWarning {
+    border-left: 4px solid var(--warning-color);
+}
+
+.stError {
+    border-left: 4px solid var(--danger-color);
+}
+
+.stInfo {
+    border-left: 4px solid var(--info-color);
+}
